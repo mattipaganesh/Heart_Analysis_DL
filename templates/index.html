@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            background-image: url("https://media.tenor.com/VDeP7omSDuUAAAAM/hardcore-terrorcore.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="feature1">Age:</label>
+        <input type="text" id="feature1" name="feature1" required>
+        <label for="feature2">Sex:</label>
+        <input type="text" id="feature2" name="feature2" required>
+        <label for="feature3">Smoker:</label>
+        <input type="text" id="feature3" name="feature3" required>
+        <label for="feature4">Years of Smoking:</label>
+        <input type="text" id="feature4" name="feature4" required>
+        <label for="feature5">LDL Cholesterol:</label>
+        <input type="text" id="feature5" name="feature5" required>
+        <label for="feature6">Chest Pain Type:</label>
+        <input type="text" id="feature6" name="feature6" required>
+        <label for="feature7">Height:</label>
+        <input type="text" id="feature7" name="feature7" required>
+        <label for="feature8">Weight:</label>
+        <input type="text" id="feature8" name="feature8" required>
+        <label for="feature9">Family History of Heart Disease:</label>
+        <input type="text" id="feature9" name="feature9" required>
+        <label for="feature10">Physical Activity:</label>
+        <input type="text" id="feature10" name="feature10" required>
+        <label for="feature11">Lifestyle:</label>
+        <input type="text" id="feature11" name="feature11" required>
+        <label for="feature12">Cardiac Intervention:</label>
+        <input type="text" id="feature12" name="feature12" required>
+        <label for="feature13">Heart Rate:</label>
+        <input type="text" id="feature13" name="feature13" required>
+        <label for="feature14">Diabetes:</label>
+        <input type="text" id="feature14" name="feature14" required>
+        <label for="feature15">Systolic Blood Pressure:</label>
+        <input type="text" id="feature15" name="feature15" required>
+        <label for="feature16">Diastolic Blood Pressure:</label>
+        <input type="text" id="feature16" name="feature16" required>
+        <label for="feature17">Hypertension:</label>
+        <input type="text" id="feature17" name="feature17" required>
+        <label for="feature18">Interventricular Septal End Diastole:</label>
+        <input type="text" id="feature18" name="feature18" required>
+        <label for="feature19">ECG Pattern:</label>
+        <input type="text" id="feature19" name="feature19" required>
+        <label for="feature20">Q Wave:</label>
+        <input type="text" id="feature20" name="feature20" required>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+

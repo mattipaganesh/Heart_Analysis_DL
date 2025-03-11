@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .prediction {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .plot {
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Disease Prediction Result</h1>
+    <div class="prediction">{{ prediction_text }}</div>
+    <div class="plot">
+        {% for plot in plots %}
+        <img src="{{ url_for('static', filename='heatmap.png') }}" alt="Heatmap">
+        <img src="{{ url_for('static', filename='scatter_plot.png') }}" alt="Scatter Plot">
+        <img src="{{ url_for('static', filename='bar_chart.png') }}" alt="Bar Chart">
+        <img src="{{ url_for('static', filename='pie_chart.png') }}" alt="Pie Chart">
+        <img src="{{ url_for('static', filename='line_plot.png') }}" alt="Line Plot">
+        <img src="{{ url_for('static', filename='histogram.png') }}" alt="Histogram">
+        <img src="{{ plot }}" alt="Feature Plot">
+        {% endfor %}
+    </div>
+</body>
+</html>
